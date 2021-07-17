@@ -151,3 +151,93 @@
 [NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 89b2ff17-17ec-4244-b83c-deffc22f895d) to 5.3 (client).
 [NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
 [NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | WARNING] Notebook JupyterDataVis/JSONparser.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 26fa11cd-7177-4b39-87c7-b99d6a452cab
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 26fa11cd-7177-4b39-87c7-b99d6a452cab) to 5.3 (client).
+[NotebookApp | WARNING] 404 GET /api/contents/JupyterDataVis/JSONparser.ipynb?content=0&_=1626539977964 (192.168.10.226): No such file or directory: JupyterDataVis/JSONparser.ipynb
+[NotebookApp | WARNING] No such file or directory: JupyterDataVis/JSONparser.ipynb
+[NotebookApp | WARNING] 404 GET /api/contents/JupyterDataVis/JSONparser.ipynb?content=0&_=1626539977964 (192.168.10.226) 1.20ms referer=https://derby-france-3000.codio.io/notebooks/JupyterDataVis/JSONparser.ipynb?codioId=095bb788-06d4-fbb4-a98e-399fe1931961
+[NotebookApp | INFO] Uploading file to /JupyterDataVis/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /JupyterDataVis/JSONparser.ipynb
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 26fa11cd-7177-4b39-87c7-b99d6a452cab) to 5.3 (client).
+[NotebookApp | WARNING] 404 GET /api/contents/JupyterDataVis/JSONparser.ipynb?content=0&_=1626539977966 (192.168.10.226): No such file or directory: JupyterDataVis/JSONparser.ipynb
+[NotebookApp | WARNING] No such file or directory: JupyterDataVis/JSONparser.ipynb
+[NotebookApp | WARNING] 404 GET /api/contents/JupyterDataVis/JSONparser.ipynb?content=0&_=1626539977966 (192.168.10.226) 1.14ms referer=https://derby-france-3000.codio.io/notebooks/JupyterDataVis/JSONparser.ipynb?codioId=095bb788-06d4-fbb4-a98e-399fe1931961
+[NotebookApp | INFO] Uploading file to /JupyterDataVis/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /JupyterDataVis/JSONparser.ipynb
+[NotebookApp | INFO] Starting buffering for 89b2ff17-17ec-4244-b83c-deffc22f895d:fc6dcf358de542b29941f9730af05153
+[NotebookApp | INFO] Starting buffering for 26fa11cd-7177-4b39-87c7-b99d6a452cab:3bbcc7253c824d9faa6e4c4e7e105cac
+[NotebookApp | WARNING] Notebook API_Project/JSONparser.ipynb is not trusted
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 89b2ff17-17ec-4244-b83c-deffc22f895d) to 5.3 (client).
+[NotebookApp | INFO] Kernel started: f658c9cf-4983-445e-bab1-c3d556cdd1bc
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel f658c9cf-4983-445e-bab1-c3d556cdd1bc) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/JSONparser.ipynb
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel f658c9cf-4983-445e-bab1-c3d556cdd1bc) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Starting buffering for 89b2ff17-17ec-4244-b83c-deffc22f895d:b2a50fa888cb4146b86699b0f9e7af4a
