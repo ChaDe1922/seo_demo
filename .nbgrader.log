@@ -1,0 +1,74 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://enrico-camilla:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 0 kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://enrico-camilla:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 5358ade5-6e87-4e39-92f7-ae912c80629b
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 5358ade5-6e87-4e39-92f7-ae912c80629b) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 5358ade5-6e87-4e39-92f7-ae912c80629b:246fb13a104c4ae589ce9a66f51010dc
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://derby-france:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] 302 GET / (192.168.10.226) 0.56ms
+[NotebookApp | WARNING] Notebook reader.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 32a37705-4ffb-479e-81f4-9c30278fedcb
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 32a37705-4ffb-479e-81f4-9c30278fedcb) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | INFO] Saving file at /reader.ipynb
+[NotebookApp | WARNING] Notebook data/line.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 8bc5b59c-3230-41cb-b745-581eb05c298c
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 8bc5b59c-3230-41cb-b745-581eb05c298c) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /data/line.ipynb
+[NotebookApp | INFO] Saving file at /data/line.ipynb
+[NotebookApp | INFO] Saving file at /data/line.ipynb
+[NotebookApp | WARNING] 404 GET /api/contents/data/line.ipynb?content=0&_=1626482570566 (192.168.10.226): No such file or directory: data/line.ipynb
+[NotebookApp | WARNING] No such file or directory: data/line.ipynb
+[NotebookApp | WARNING] 404 GET /api/contents/data/line.ipynb?content=0&_=1626482570566 (192.168.10.226) 1.50ms referer=https://derby-france-3000.codio.io/notebooks/data/line.ipynb?codioId=ae4d540e-f8e1-6c82-b3be-82eff7b735eb
+[NotebookApp | INFO] Uploading file to /data/line.ipynb
+[NotebookApp | INFO] Starting buffering for 8bc5b59c-3230-41cb-b745-581eb05c298c:65f5dad5a8ff436887d0ad8029dc09d3
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 8bc5b59c-3230-41cb-b745-581eb05c298c) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 8bc5b59c-3230-41cb-b745-581eb05c298c:698a252fb33a45d08ff00e5949d258a7
+[NotebookApp | WARNING] Notebook CD_jupyter_1.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8) to 5.3 (client).
+[NotebookApp | WARNING] Notebook CD_jupyter_2.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: c7291520-dfc8-4ad6-9602-191fe8185c18
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel c7291520-dfc8-4ad6-9602-191fe8185c18) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_2.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_1.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_2.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_2.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_2.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_2.ipynb
+[NotebookApp | INFO] Saving file at /CD_jupyter_2.ipynb
