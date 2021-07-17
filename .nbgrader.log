@@ -72,3 +72,82 @@
 [NotebookApp | INFO] Saving file at /CD_jupyter_2.ipynb
 [NotebookApp | INFO] Saving file at /CD_jupyter_2.ipynb
 [NotebookApp | INFO] Saving file at /CD_jupyter_2.ipynb
+[NotebookApp | INFO] Starting buffering for c7291520-dfc8-4ad6-9602-191fe8185c18:f0321208393742e5acda1d0e92cd68a2
+[NotebookApp | INFO] Starting buffering for 32a37705-4ffb-479e-81f4-9c30278fedcb:a1f35fa324ac4b168e04178f2f229577
+[NotebookApp | INFO] Starting buffering for 12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8:5fd0f005239d462c97d56c68e8fa5134
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 32a37705-4ffb-479e-81f4-9c30278fedcb) to 5.3 (client).
+[NotebookApp | INFO] Restoring connection for 32a37705-4ffb-479e-81f4-9c30278fedcb:a1f35fa324ac4b168e04178f2f229577
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel c7291520-dfc8-4ad6-9602-191fe8185c18) to 5.3 (client).
+[NotebookApp | INFO] Restoring connection for c7291520-dfc8-4ad6-9602-191fe8185c18:f0321208393742e5acda1d0e92cd68a2
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8) to 5.3 (client).
+[NotebookApp | INFO] Restoring connection for 12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8:5fd0f005239d462c97d56c68e8fa5134
+[NotebookApp | WARNING] WebSocket ping timeout after 90007 ms.
+[NotebookApp | WARNING] WebSocket ping timeout after 90001 ms.
+[NotebookApp | WARNING] WebSocket ping timeout after 90001 ms.
+[NotebookApp | INFO] Starting buffering for 32a37705-4ffb-479e-81f4-9c30278fedcb:a1f35fa324ac4b168e04178f2f229577
+[NotebookApp | INFO] Starting buffering for c7291520-dfc8-4ad6-9602-191fe8185c18:f0321208393742e5acda1d0e92cd68a2
+[NotebookApp | INFO] Starting buffering for 12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8:5fd0f005239d462c97d56c68e8fa5134
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 4 kernels
+[NotebookApp | INFO] Kernel shutdown: 32a37705-4ffb-479e-81f4-9c30278fedcb
+[NotebookApp | INFO] Kernel shutdown: 8bc5b59c-3230-41cb-b745-581eb05c298c
+[NotebookApp | INFO] Kernel shutdown: 12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8
+[NotebookApp | INFO] Kernel shutdown: c7291520-dfc8-4ad6-9602-191fe8185c18
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://derby-france:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] 404 GET /api/kernels/12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8/channels?session_id=5fd0f005239d462c97d56c68e8fa5134 (192.168.10.226): Kernel does not exist: 12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8
+[NotebookApp | WARNING] 404 GET /api/kernels/12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8/channels?session_id=5fd0f005239d462c97d56c68e8fa5134 (192.168.10.226) 70.68ms referer=None
+[NotebookApp | WARNING] 404 GET /api/kernels/c7291520-dfc8-4ad6-9602-191fe8185c18/channels?session_id=f0321208393742e5acda1d0e92cd68a2 (192.168.10.226): Kernel does not exist: c7291520-dfc8-4ad6-9602-191fe8185c18
+[NotebookApp | WARNING] 404 GET /api/kernels/c7291520-dfc8-4ad6-9602-191fe8185c18/channels?session_id=f0321208393742e5acda1d0e92cd68a2 (192.168.10.226) 2.35ms referer=None
+[NotebookApp | WARNING] 404 GET /api/kernels/32a37705-4ffb-479e-81f4-9c30278fedcb/channels?session_id=a1f35fa324ac4b168e04178f2f229577 (192.168.10.226): Kernel does not exist: 32a37705-4ffb-479e-81f4-9c30278fedcb
+[NotebookApp | WARNING] 404 GET /api/kernels/32a37705-4ffb-479e-81f4-9c30278fedcb/channels?session_id=a1f35fa324ac4b168e04178f2f229577 (192.168.10.226) 2.30ms referer=None
+[NotebookApp | WARNING] Replacing stale connection: 12dca98e-b0a7-4bb8-abc8-f817cbdfd0d8:5fd0f005239d462c97d56c68e8fa5134
+[NotebookApp | WARNING] Replacing stale connection: c7291520-dfc8-4ad6-9602-191fe8185c18:f0321208393742e5acda1d0e92cd68a2
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 0 kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://derby-france:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: f37b7095-2b67-47be-81e3-d9f665ee0d18
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel f37b7095-2b67-47be-81e3-d9f665ee0d18) to 5.3 (client).
+[NotebookApp | INFO] Kernel started: 621066c0-6792-4785-8b63-989353345585
+[NotebookApp | INFO] Kernel started: 2d9b095a-ddb9-44b9-a3b3-3ef5b40c7109
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 621066c0-6792-4785-8b63-989353345585) to 5.3 (client).
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 2d9b095a-ddb9-44b9-a3b3-3ef5b40c7109) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 2d9b095a-ddb9-44b9-a3b3-3ef5b40c7109:fc1b53213d0b4a8f9b3634c8082ee619
+[NotebookApp | INFO] Starting buffering for 621066c0-6792-4785-8b63-989353345585:15199e37f4e04a398e919ca0f45150fb
+[NotebookApp | INFO] Starting buffering for f37b7095-2b67-47be-81e3-d9f665ee0d18:2b522562942b43eb9c6f77674fcf72b2
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 3 kernels
+[NotebookApp | INFO] Kernel shutdown: f37b7095-2b67-47be-81e3-d9f665ee0d18
+[NotebookApp | INFO] Kernel shutdown: 621066c0-6792-4785-8b63-989353345585
+[NotebookApp | INFO] Kernel shutdown: 2d9b095a-ddb9-44b9-a3b3-3ef5b40c7109
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://derby-france:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook API_Project/spotter.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 89b2ff17-17ec-4244-b83c-deffc22f895d
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 89b2ff17-17ec-4244-b83c-deffc22f895d) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Starting buffering for 89b2ff17-17ec-4244-b83c-deffc22f895d:34b3c5f8537a4ecdb1f37d7206deea62
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 89b2ff17-17ec-4244-b83c-deffc22f895d) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotter.ipynb
