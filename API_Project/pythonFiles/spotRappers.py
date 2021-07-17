@@ -57,7 +57,18 @@ d = r.json()
 
 
 #convert dictionary 'd' into pandas dataframe
-rapperDF = pd.DataFrame.from_dict(d['artists'])
+rows=[]
+for artist in d['artists']:
+    artistData = []
+    artistData.append(artist['name'])
+    artistData.append(artist['genres'][0:2])
+    artistData.append(artist['popularity'])
+    for key in artist['followers']:
+        if key == 'total':
+            artistData.append(artist['followers'][key])
+    rows.append(artistData)
+    
+pd.DataFrame(rows, columns=['Name', 'Genres', 'Popularity', 'Followers']).head()
 
 #create engine object
 engine = create_engine('mysql://root:codio@localhost/rappers')
