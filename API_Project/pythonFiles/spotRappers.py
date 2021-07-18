@@ -73,7 +73,7 @@ def getArtistsRequest(headers):
 #TEST 3: Was each request successful
 #TEST 4: Does each artist exist?
 #TEST 5: Does it return a Pandas DataFrame
-def getArtistData(desArtistList):
+def getArtistData(desArtistList, headers):
        #Access endpoints base URL for spotify
        #do a GET request for each artist entered. Specify the url & the headers set for authentication. You can input parameters (params=) as to what limits you want on the json file that will be returned to you
        print("GETting request from Spofity API...")
@@ -133,13 +133,17 @@ def sendToSQL(artistDF):
        return successMessage
        
 
-#FUNCTION CALLS
-headers = requestAuth(CLIENT_ID, CLIENT_SECRET, AUTH_URL)
-#print(type(headers))
-desArtistList = getArtistsRequest(headers)
-artistDF = getArtistData(desArtistList)
-print(artistDF)
+def main():
+       #FUNCTION CALLS
+       headers = requestAuth(CLIENT_ID, CLIENT_SECRET, AUTH_URL)
+       #print(type(headers))
+       desArtistList = getArtistsRequest(headers)
+       artistDF = getArtistData(desArtistList, headers)
+       print(artistDF)
 
-successMessage = sendToSQL(artistDF)
-print(successMessage)
-print("Program Complete, Goodbye.")
+       successMessage = sendToSQL(artistDF)
+       print(successMessage)
+       print("Program Complete, Goodbye.")
+       
+if __name__ == "__main__":
+       main()
