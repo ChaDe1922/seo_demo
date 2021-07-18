@@ -40,6 +40,7 @@ def requestAuth(CLIENT_ID, CLIENT_SECRET, AUTH_URL):
        if auth_response.status_code == 200:
               #Print the response to my request
               print(auth_response.status_code, "Authentication Successful\n")
+              
        else:
               print(auth_response.status_code, "There was some type of error!\n")
               
@@ -112,16 +113,34 @@ def loadNewData(desArtistList, headers, dataframe):
               for item in artistInfo['items']:
                      artistName = item['name']
                      artistID = item['id']
+                     print("Artist ID for", artistName, ":", artistID, "\n")
        
-       #Read the existing dataframe variables
-       #Scan artistName and artistID columns in frame variable
-       #if the dataframe variables match the parsed data from the response
-       #print name already exists
-       #do not append artist info to the dataframe
-       #If the parsed and database variables do not match
-       #print adding artistName
-       #append artist data to dataframe
-       #return the updated dataframe
+                     #Scan artistName and artistID columns in frame variable
+                     matching_artists = dataframe[(dataframe["Name"] == artistName) | (dataframe["Artist ID"] == artistID)]
+                     #if the dataframe variables match the parsed data from the response
+                     #print name already exists
+                     #do not append artist info to the dataframe
+                     if not matching_artists.empty:
+                        print("There is a matching artist\n")
+                        print(matching_artists, "\n")
+        
+                    #If the parsed and database variables do not match
+                    #print adding artistName
+                    #append artist data to dataframe
+                    else:
+                        print("There is no matching artist. Adding New Artist\n")
+                        NewArtistData = []
+                        NewArtistData.append(item['name'])
+                        NewArtistData.append(item['id'])
+                        NewArtistData.append(item['genres'][0])
+                        NewArtistData.append(item['popularity'])
+                        for key in item['followers']:
+                        if key == 'total':
+                            NewArtistData.append(item['followers'][key])
+                            rows.append(NewArtistData)
+                    #return the updated dataframe
+              dataframe = pd.DataFrame(rows, columns=['Name','Artist ID', 'Genre', 'Popularity', 'Followers'])
+              return dataframe
 
 ########################################################################
 #                      FOR USER INTERACTION                            #

@@ -440,3 +440,105 @@
 [NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 98f375de-2ec4-4ae2-9e31-cc1b72c978d7) to 5.3 (client).
 [NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 361ea82b-f1bb-4a1f-8b27-6273b08c4517) to 5.3 (client).
 [NotebookApp | INFO] Saving file at /API_Project/notebooks/spotSketch.ipynb
+[NotebookApp | INFO] Starting buffering for fc452243-44b3-418c-b4a8-bfde0775a355:1283d42d0482484e8e3f946d659427fd
+[NotebookApp | INFO] Starting buffering for 98f375de-2ec4-4ae2-9e31-cc1b72c978d7:ac82e6abea54444993f328d03c02d07c
+[NotebookApp | INFO] Starting buffering for 6477394c-217a-457d-ba8f-06ffc3080fa7:8aed58b549dc48b49f8367fdf2f5a4d1
+[NotebookApp | INFO] Starting buffering for 361ea82b-f1bb-4a1f-8b27-6273b08c4517:3e4dca67ddac49048c4aff056228fe77
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 98f375de-2ec4-4ae2-9e31-cc1b72c978d7) to 5.3 (client).
+[NotebookApp | INFO] Restoring connection for 98f375de-2ec4-4ae2-9e31-cc1b72c978d7:ac82e6abea54444993f328d03c02d07c
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel fc452243-44b3-418c-b4a8-bfde0775a355) to 5.3 (client).
+[NotebookApp | INFO] Restoring connection for fc452243-44b3-418c-b4a8-bfde0775a355:1283d42d0482484e8e3f946d659427fd
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 361ea82b-f1bb-4a1f-8b27-6273b08c4517) to 5.3 (client).
+[NotebookApp | INFO] Restoring connection for 361ea82b-f1bb-4a1f-8b27-6273b08c4517:3e4dca67ddac49048c4aff056228fe77
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 6477394c-217a-457d-ba8f-06ffc3080fa7) to 5.3 (client).
+[NotebookApp | INFO] Restoring connection for 6477394c-217a-457d-ba8f-06ffc3080fa7:8aed58b549dc48b49f8367fdf2f5a4d1
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 4 kernels
+[NotebookApp | INFO] Kernel shutdown: fc452243-44b3-418c-b4a8-bfde0775a355
+[NotebookApp | INFO] Kernel shutdown: 6477394c-217a-457d-ba8f-06ffc3080fa7
+[NotebookApp | INFO] Kernel shutdown: 98f375de-2ec4-4ae2-9e31-cc1b72c978d7
+[NotebookApp | INFO] Kernel shutdown: 361ea82b-f1bb-4a1f-8b27-6273b08c4517
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://derby-france:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 0 kernels
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://derby-france:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: 974e7b11-1524-4f98-8dd9-adaaae8427a1
+[NotebookApp | INFO] Kernel started: cbb4d69c-9a10-4ad4-8893-4fb63699e23a
+[NotebookApp | INFO] Kernel started: 1259382a-9a07-435d-a216-67dc2f853c1e
+[NotebookApp | INFO] Kernel started: d0cf04c3-f84c-44f7-b0e1-c337f194107b
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 974e7b11-1524-4f98-8dd9-adaaae8427a1) to 5.3 (client).
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel cbb4d69c-9a10-4ad4-8893-4fb63699e23a) to 5.3 (client).
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel d0cf04c3-f84c-44f7-b0e1-c337f194107b) to 5.3 (client).
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 1259382a-9a07-435d-a216-67dc2f853c1e) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /API_Project/notebooks/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/notebooks/spotSketch.ipynb
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 4 kernels
+[NotebookApp | INFO] Kernel shutdown: 974e7b11-1524-4f98-8dd9-adaaae8427a1
+[NotebookApp | INFO] Kernel shutdown: cbb4d69c-9a10-4ad4-8893-4fb63699e23a
+[NotebookApp | INFO] Kernel shutdown: 1259382a-9a07-435d-a216-67dc2f853c1e
+[NotebookApp | INFO] Kernel shutdown: d0cf04c3-f84c-44f7-b0e1-c337f194107b
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://derby-france:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | INFO] Kernel started: a80c07b7-8f4e-45be-8718-1e690c074018
+[NotebookApp | INFO] Kernel started: 60caae6b-4bc1-4c30-b744-ffd66d87c20f
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel a80c07b7-8f4e-45be-8718-1e690c074018) to 5.3 (client).
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 60caae6b-4bc1-4c30-b744-ffd66d87c20f) to 5.3 (client).
+[NotebookApp | INFO] Starting buffering for 60caae6b-4bc1-4c30-b744-ffd66d87c20f:5f73baf3b90e4d2d947304896e2f6c12
+[NotebookApp | INFO] Starting buffering for a80c07b7-8f4e-45be-8718-1e690c074018:634f1a2d01824b08822cbd797f0f9cc3
+[NotebookApp | INFO] Kernel started: 641a645d-519e-4d77-9b2f-b0d443813aa9
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 641a645d-519e-4d77-9b2f-b0d443813aa9) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
+[NotebookApp | INFO] Saving file at /API_Project/spotSketch.ipynb
