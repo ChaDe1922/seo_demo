@@ -115,7 +115,7 @@ def getArtistData(desArtistList):
 #TEST 3: Does the successMessage return
 def sendToSQL(artistDF):
        #create engine object
-       engine = create_engine('mysql://root:codio@localhost/artists')
+       engine = create_engine('mysql://root:codio@localhost/artist_collection')
 
        #create and send sql table from my dataframe
        print("Creating SQL from DataFrame...")
