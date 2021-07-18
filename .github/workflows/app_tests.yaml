@@ -15,7 +15,7 @@ jobs:
       - name: Install tools
         run: |
           python -m pip install --upgrade pip pytest pandas matplotlib
-          python -m pip install --upgrade pip pytest requests spotipy json sqlalchemy
+          python -m pip install --upgrade pip pytest requests spotipy
       - name: Test with unittest
         run: |
           python3 -m unittest spotRappers_test.py
