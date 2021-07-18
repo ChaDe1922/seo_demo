@@ -17,4 +17,4 @@ jobs:
 
       - name: Test with unittest
         run: |
-          python3 -m unittest API_Project/pythonFiles/spotRappers_test.py
+          python3 -m unittest pythonFiles/spotRappers_test.py
