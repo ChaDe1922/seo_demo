@@ -61,14 +61,15 @@ rows=[]
 for artist in d['artists']:
     artistData = []
     artistData.append(artist['name'])
-    artistData.append(artist['genres'][0:2])
+    artistData.append(artist['id'])
+    artistData.append(artist['genres'][0])
     artistData.append(artist['popularity'])
     for key in artist['followers']:
         if key == 'total':
             artistData.append(artist['followers'][key])
     rows.append(artistData)
     
-pd.DataFrame(rows, columns=['Name', 'Genres', 'Popularity', 'Followers']).head()
+pd.DataFrame(rows, columns=['Name','Artist ID', 'Genre', 'Popularity', 'Followers'])
 
 #create engine object
 engine = create_engine('mysql://root:codio@localhost/rappers')
