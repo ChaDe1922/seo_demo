@@ -60,12 +60,10 @@ def requestAuth(CLIENT_ID, CLIENT_SECRET, AUTH_URL):
 #TEST 3: Was each request successful
 #TEST 4: Does each artist exist?
 #TEST 5: Does it return a Pandas DataFrame
-def pullDataFromAPIintoPandasDF(desArtistList, headers, filename):
+def pullDataFromAPIintoPandasDF(desArtistList, headers, filename, BASE_URL):
        #Access endpoints base URL for spotify
        #do a GET request for each artist entered. Specify the url & the headers set for authentication. You can input parameters (params=) as to what limits you want on the json file that will be returned to you
        print("GETting request from Spofity API...")
-       BASE_URL = 'https://api.spotify.com/v1/'
-       
        rows = []
        id = 0
        
@@ -73,7 +71,7 @@ def pullDataFromAPIintoPandasDF(desArtistList, headers, filename):
               print(entry, "request")
               
               r = requests.get(BASE_URL + 'search?q=' + entry + '&type=artist&limit=1', headers = headers)
-              #print(artIdReq.status_code)
+              #print(r.status_code)
               d = r.json()
               
               artistInfo = d['artists']
@@ -100,47 +98,48 @@ def pullDataFromAPIintoPandasDF(desArtistList, headers, filename):
                      
        return dataframe
 
-def loadNewData(desArtistList, headers, dataframe):
+def loadNewData(desArtistList, headers, dataframe, BASE_URL):
        #read the user artist requests
+       print("GETting request from Spofity API...")
+       rows = []
        for entry in desArtistList:
-              print(entry, "request") 
-              #Request info on those artists
+              print(entry, "request")
               r = requests.get(BASE_URL + 'search?q=' + entry + '&type=artist&limit=1', headers = headers)
+              print(r.status_code)
               d = r.json()
-       
-              #Parse their artist name and artist id from the requests
+              #print(d)
+              
               artistInfo = d['artists']
               for item in artistInfo['items']:
                      artistName = item['name']
                      artistID = item['id']
-                     print("Artist ID for", artistName, ":", artistID, "\n")
-       
-                     #Scan artistName and artistID columns in frame variable
+                     print("Artist ID for", artistName, ":", artistID)
+                     
                      matching_artists = dataframe[(dataframe["Name"] == artistName) | (dataframe["Artist ID"] == artistID)]
-                     #if the dataframe variables match the parsed data from the response
-                     #print name already exists
-                     #do not append artist info to the dataframe
                      if not matching_artists.empty:
-                        print("There is a matching artist\n")
-                        print(matching_artists, "\n")
-        
-                    #If the parsed and database variables do not match
-                    #print adding artistName
-                    #append artist data to dataframe
-                    else:
-                        print("There is no matching artist. Adding New Artist\n")
-                        NewArtistData = []
-                        NewArtistData.append(item['name'])
-                        NewArtistData.append(item['id'])
-                        NewArtistData.append(item['genres'][0])
-                        NewArtistData.append(item['popularity'])
-                        for key in item['followers']:
-                        if key == 'total':
-                            NewArtistData.append(item['followers'][key])
+                            print("There is a matching artist\n")
+                            print(matching_artists, "\n")
+                            
+                     else:
+                            print("There is no matching artist.")
+                            print(" Adding New Artist\n", artistName)
+                            
+                            NewArtistData = []
+                            NewArtistData.append(item['name'])
+                            NewArtistData.append(item['id'])
+                            NewArtistData.append(item['genres'][0])
+                            NewArtistData.append(item['popularity'])
+                            for key in item['followers']:
+                                   if key == 'total':
+                                          NewArtistData.append(item['followers'][key])
+                            
                             rows.append(NewArtistData)
-                    #return the updated dataframe
-              dataframe = pd.DataFrame(rows, columns=['Name','Artist ID', 'Genre', 'Popularity', 'Followers'])
-              return dataframe
+                            
+       NewDF = pd.DataFrame(rows, columns=['Name','Artist ID', 'Genre', 'Popularity', 'Followers'])
+       
+       dataframe = dataframe.append(NewDF)
+       
+       return dataframe
 
 ########################################################################
 #                      FOR USER INTERACTION                            #
@@ -171,18 +170,24 @@ def saveSQLtoFile(filename, database_name):
        
 def loadSQLfromFile(filename, database_name):
        #create a database if it doesn't exist
-       os.system('mysql -u root -pcodio -e "CREATE DATABASE IF NOT EXISTS ' + database_name + ' ;"')
-       os.system("mysql -u root -pcodio "+ database_name + " > " + filename)
+       os.system('mysql -u root -pcodio -e "CREATE DATABASE IF NOT EXISTS ' + database_name + ';"')
+       os.system("mysql -u root -pcodio "+ database_name + " < " + filename)
 
 def createEngine(database_name):
-       return  create_engine('mysql://root:codio@localhost/' + database_name '?charset=utf8', encoding='utf-8')
+       engine = create_engine('mysql://root:codio@localhost/' + database_name + '?charset=utf8', encoding='utf-8')
+       return engine
 
-def updateDataset(database_name, table_name, filename):
+def updateDataset(database_name, table_name, filename, desArtistList, headers, BASE_URL):
+       print("Loading SQL...")
        loadSQLfromFile(filename, database_name)
+       
+       print("Reading SQL into dataframe...")
        df = pd.read_sql_table(table_name, con=createEngine(database_name))
-       return loadNewData(desArtistList, df)
+       
+       print("Loading New Data...")
+       return loadNewData(desArtistList, headers, df, BASE_URL)
 
-def saveDatasetToFile(database_name, table_name, filename, dataframe):
+def saveDatasetToFile(database_name, table_name, filename, dataframe, engine):
        print("Creating SQL from DataFrame...")
        dataframe.to_sql(table_name, con=createEngine(database_name), if_exists='replace', index=False,
                         dtype={'id' : sqlalchemy.types.INTEGER(),
@@ -192,7 +197,8 @@ def saveDatasetToFile(database_name, table_name, filename, dataframe):
                                'Popularity' : sqlalchemy.types.INTEGER(),
                                'Followers' : sqlalchemy.types.INTEGER(),
                      })
-       engine.execute('ALTER TABLE artists ADD PRIMARY KEY (`id`);')
+       #
+       #engine.execute('ALTER TABLE artists ADD PRIMARY KEY (`id`);')
        saveSQLtoFile(filename, database_name)
        
        
@@ -208,27 +214,34 @@ def main():
        AUTH_URL = 'https://accounts.spotify.com/api/token'
        
        #Environment Variables
+       BASE_URL = 'https://api.spotify.com/v1/'
        database_name = 'artist_collection'
        table_name = 'artists'
        filename = 'data-dump.sql'
        
-       #FUNCTION CALLS
+       #GET AUHENTICATION & HEADER DATA
        auth_response, headers = requestAuth(CLIENT_ID, CLIENT_SECRET, AUTH_URL)
        print(type(headers))
+       
+       
+       #GET ARTIST NAMES FROM USER
        desArtistList = getArtistsRequest(headers)
        
-       update_or_new = (input("Would you like to update the datebase or create a new one? (Enter 'update' or 'new')"))
+       #ASK USER IF THEY WANT TO UPDATE OR SCRATCH
+       update_or_new = (input("Would you like to update the datebase or create a new one? (Enter 'update' or 'new'): "))
+       engine = createEngine(database_name)
        
        if update_or_new == 'update':
-              df = updateDataset(database_name, table_name, filename)
+              print("Now updating...")
+              df = updateDataset(database_name, table_name, filename, desArtistList, headers, BASE_URL)
               print(df)
-              saveDatasetToFile(database_name, table_name, filename, df)
+              saveDatasetToFile(database_name, table_name, filename, df, engine)
               print("Program Complete, Goodbye.")
        
        elif update_or_new == 'new':
               df = pullDataFromAPIintoPandasDF(desArtistList, headers, filename)
               print(df)
-              saveDatasetToFile(database_name, table_name, filename, df)
+              saveDatasetToFile(database_name, table_name, filename, df, engine)
               print("Program Complete, Goodbye.")
               
        else:
@@ -236,7 +249,6 @@ def main():
        
        
        
-       
-       
 if __name__ == "__main__":
        main()
+       
