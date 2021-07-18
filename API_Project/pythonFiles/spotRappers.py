@@ -51,13 +51,13 @@ def requestAuth(CLIENT_ID, CLIENT_SECRET, AUTH_URL):
               'Authorization': 'Bearer {token}'.format(token=access_token)
        }
        
-       return headers
+       return auth_response, headers
 
 
 
 
 #TEST 1: Is it receiving a dictionary?
-#TEST 2: Is the user inputting strings?TEST
+#TEST 2: Is the user inputting strings?
 #TEST 3: Is it returning a list?
 def getArtistsRequest(headers):
        #Get artist names from user
