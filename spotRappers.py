@@ -102,6 +102,7 @@ def loadNewData(desArtistList, headers, dataframe, BASE_URL):
        #read the user artist requests
        print("GETting request from Spofity API...")
        rows = []
+       id = dataframe['id'].max() + 1
        for entry in desArtistList:
               print(entry, "request")
               r = requests.get(BASE_URL + 'search?q=' + entry + '&type=artist&limit=1', headers = headers)
@@ -125,6 +126,7 @@ def loadNewData(desArtistList, headers, dataframe, BASE_URL):
                             print(" Adding New Artist\n", artistName)
                             
                             NewArtistData = []
+                            NewArtistData.append(id)
                             NewArtistData.append(item['name'])
                             NewArtistData.append(item['id'])
                             NewArtistData.append(item['genres'][0])
@@ -134,8 +136,9 @@ def loadNewData(desArtistList, headers, dataframe, BASE_URL):
                                           NewArtistData.append(item['followers'][key])
                             
                             rows.append(NewArtistData)
+                            id += 1
                             
-       NewDF = pd.DataFrame(rows, columns=['Name','Artist ID', 'Genre', 'Popularity', 'Followers'])
+       NewDF = pd.DataFrame(rows, columns=['id', 'Name','Artist ID', 'Genre', 'Popularity', 'Followers'])
        
        dataframe = dataframe.append(NewDF)
        
@@ -197,8 +200,8 @@ def saveDatasetToFile(database_name, table_name, filename, dataframe, engine):
                                'Popularity' : sqlalchemy.types.INTEGER(),
                                'Followers' : sqlalchemy.types.INTEGER(),
                      })
-       #
-       #engine.execute('ALTER TABLE artists ADD PRIMARY KEY (`id`);')
+       
+       engine.execute('ALTER TABLE artists ADD PRIMARY KEY (`id`);')
        saveSQLtoFile(filename, database_name)
        
        
@@ -239,7 +242,7 @@ def main():
               print("Program Complete, Goodbye.")
        
        elif update_or_new == 'new':
-              df = pullDataFromAPIintoPandasDF(desArtistList, headers, filename)
+              df = pullDataFromAPIintoPandasDF(desArtistList, headers, filename, BASE_URL)
               print(df)
               saveDatasetToFile(database_name, table_name, filename, df, engine)
               print("Program Complete, Goodbye.")
